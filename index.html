@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bodas de Oro - Benedicta & Andrés</title>
+  <meta name="description" content="Invitación a las Bodas de Oro de Benedicta y Andrés. Sábado 05 de septiembre de 2026. Misa 18:00 hrs y recepción 20:00 hrs." />
+
+  <meta property="og:title" content="Bodas de Oro - Benedicta & Andrés" />
+  <meta property="og:description" content="Te invitamos a celebrar 50 años de amor. Sábado 05 de septiembre de 2026. Misa 18:00 hrs y recepción 20:00 hrs." />
+  <meta property="og:image" content="https://maribel-velasquez.github.io/invitacion/preview.png" />
+  <meta property="og:image:secure_url" content="https://maribel-velasquez.github.io/invitacion/preview.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1449" />
+  <meta property="og:image:height" content="2048" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maribel-velasquez.github.io/invitacion/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bodas de Oro - Benedicta & Andrés" />
+  <meta name="twitter:description" content="Te invitamos a celebrar 50 años de amor." />
+  <meta name="twitter:image" content="https://maribel-velasquez.github.io/invitacion/preview.png" />
+
+  <script>
+    document.documentElement.classList.add('animaciones-activas');
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.96), rgba(241,234,220,0.94)),
+        #efe8d8;
+      font-family: Arial, sans-serif;
+      color: #334334;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 10px;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 395px;
+      background: #fffdf8;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+    }
+
+    .invitacion {
+      padding: 12px 11px 6px;
+      background: linear-gradient(180deg, #fffdf8 0%, #fffaf1 100%);
+    }
+
+    .tarjeta-interna {
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 13px;
+      overflow: hidden;
+      box-shadow: 0 7px 16px rgba(0,0,0,0.09);
+      border: 1px solid rgba(184, 142, 51, 0.22);
+      background: #fff;
+    }
+
+    .tarjeta-interna img {
+      width: 100%;
+      display: block;
+      height: auto;
+      transform: scale(1);
+      filter: brightness(0.94) saturate(0.96);
+      transition: transform 8s ease-out, filter 1.4s ease;
+    }
+
+    .animaciones-activas .tarjeta-interna {
+      opacity: 0;
+      transform: translateY(14px) scale(0.985);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .animaciones-activas .tarjeta-interna.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .animaciones-activas .tarjeta-interna.is-visible img {
+      transform: scale(1.035);
+      filter: brightness(1) saturate(1);
+    }
+
+
+    .bloque-invitado {
+      margin: 0 11px 8px;
+      padding: 9px 10px;
+      text-align: center;
+      background: #fff7dc;
+      border: 1px solid rgba(184, 142, 51, 0.35);
+      border-radius: 14px;
+      color: #334334;
+    }
+
+    .bloque-invitado .label-invitado {
+      display: block;
+      font-size: 8.5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #b8862f;
+      margin-bottom: 3px;
+      font-weight: bold;
+    }
+
+    .bloque-invitado .nombre-invitado {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 14px;
+      line-height: 1.25;
+      color: #334334;
+      font-weight: bold;
+    }
+
+    .album {
+      padding: 12px 11px 12px;
+      background: linear-gradient(180deg, #fffdf8 0%, #fff7ea 100%);
+      border-top: 1px solid rgba(184, 142, 51, 0.28);
+    }
+
+    .titulo-album {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #b8862f;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      margin-bottom: 4px;
+    }
+
+    .subtitulo-album {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10.5px;
+      line-height: 1.3;
+      color: #4b5a4a;
+      margin-bottom: 12px;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 22px;
+      margin-top: 4px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 8px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(184, 134, 47, 0.18), rgba(184, 134, 47, 0.7), rgba(184, 134, 47, 0.18));
+      border-radius: 999px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -18px;
+      top: 22px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #b8862f;
+      box-shadow: 0 0 0 4px rgba(184, 134, 47, 0.12);
+    }
+
+    .timeline-card {
+      background: #fffdf9;
+      border: 1px solid rgba(184, 142, 51, 0.22);
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+      padding: 8px;
+    }
+
+    .animaciones-activas .timeline-card {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.85s ease, transform 0.85s ease;
+      will-change: opacity, transform;
+    }
+
+    .animaciones-activas .timeline-item:nth-child(even) .timeline-card {
+      transform: translateX(22px);
+    }
+
+    .animaciones-activas .timeline-item.is-visible .timeline-card {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    .timeline-badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(184, 142, 51, 0.22);
+      background: #fbf1d8;
+      color: #b8862f;
+      font-size: 9px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .timeline-photo {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      margin-bottom: 7px;
+      background: #f4efe2;
+    }
+
+    .timeline-photo img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1);
+      transition: transform 6s ease-out;
+    }
+
+    .timeline-item.is-visible .timeline-photo img {
+      transform: scale(1.045);
+    }
+
+    .timeline-description {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 10px;
+      line-height: 1.25;
+      color: #4b5a4a;
+      text-align: center;
+    }
+
+    .separador {
+      width: 68%;
+      height: 1px;
+      margin: 12px auto 0;
+      background: linear-gradient(90deg, transparent, #b8862f, transparent);
+    }
+
+
+
+    .panel-evento {
+      padding: 10px 10px 12px;
+      text-align: center;
+      background: #fffdf8;
+      border-top: 1px solid rgba(184, 142, 51, 0.28);
+    }
+
+    .titulo-panel {
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #b8862f;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .cuenta-regresiva {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      margin: 6px 0 8px;
+    }
+
+    .tiempo {
+      border: 1px solid rgba(184, 142, 51, 0.42);
+      border-radius: 8px;
+      padding: 5px 2px;
+      background: #fffaf0;
+    }
+
+    .tiempo span {
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      color: #b8862f;
+      line-height: 1.1;
+    }
+
+    .tiempo small {
+      display: block;
+      font-size: 7px;
+      text-transform: uppercase;
+      color: #2f3e2f;
+      margin-top: 1px;
+      letter-spacing: 0.25px;
+    }
+
+    .subtexto {
+      font-size: 9px;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #455345;
+    }
+
+    .botones {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      margin-top: 6px;
+    }
+
+    .boton {
+      border: 1px solid #b8862f;
+      background: #fff7dc;
+      color: #2f3e2f;
+      text-decoration: none;
+      padding: 7px 8px;
+      border-radius: 999px;
+      font-size: 9.5px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      width: 100%;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .boton:hover { background: #f3df9b; }
+    .boton:active { transform: scale(0.98); }
+
+    .boton-principal {
+      background: #f8eab7;
+      font-weight: bold;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 7px;
+      height: 28px;
+      transform: scale(0.96);
+      transform-origin: center top;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animaciones-activas .tarjeta-interna,
+      .animaciones-activas .tarjeta-interna img,
+      .animaciones-activas .timeline-card,
+      .timeline-photo img {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .contenedor {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .panel-evento {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <section class="invitacion">
+      <div class="tarjeta-interna">
+        <img src="preview.png?v=20260804-3" alt="Invitación Bodas de Oro" />
+      </div>
+    </section>
+
+    <section class="bloque-invitado" id="bloqueInvitado" style="display: none;">
+      <span class="label-invitado">Invitación especial para</span>
+      <span class="nombre-invitado" id="nombreInvitado"></span>
+    </section>
+
+    
+
+    
+    <section class="album">
+      <p class="titulo-album">NUESTRA HISTORIA A LO LARGO DE LOS AÑOS</p>
+      <p class="subtitulo-album">
+        50 años de amor, compañía y recuerdos compartidos con el corazón.
+      </p>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-badge">LOS COMIENZOS</div>
+            <div class="timeline-photo">
+              <img src="assets/historia-1.jpg" alt="Foto antigua de Benedicta y Andrés" />
+            </div>
+            <div class="timeline-description">
+              Una historia que empezó con sacrificio, unión y amor. En esta imagen viven los comienzos de un camino que hoy celebra 50 años.
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-badge">EL CAMINO COMPARTIDO</div>
+            <div class="timeline-photo">
+              <img src="assets/historia-2.jpg" alt="Momentos cotidianos de Benedicta y Andrés" />
+            </div>
+            <div class="timeline-description">
+              Entre días simples y momentos sinceros, escribieron una vida entera juntos. Porque también en los pequeños momentos se hizo eterna su historia.
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-badge">LA FAMILIA</div>
+            <div class="timeline-photo">
+              <img src="assets/historia-3.jpg" alt="Foto familiar" />
+            </div>
+            <div class="timeline-description">
+              Cada año vivido juntos dejó huellas de amor en quienes más los aman. Su historia unió dos vidas y reunió generaciones enteras alrededor de ese amor.
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-badge">HOY</div>
+            <div class="timeline-photo">
+              <img src="assets/historia-4.jpg" alt="Foto actual de Benedicta y Andrés" />
+            </div>
+            <div class="timeline-description">
+              Su historia sigue viva en cada sonrisa, en cada mirada y en cada paso juntos. Hoy celebramos un amor que supo crecer, resistir y permanecer.
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="separador"></div>
+    </section>
+
+    <section class="panel-evento">
+
+
+
+      <p class="titulo-panel">Detalles del evento</p>
+
+      <div class="cuenta-regresiva" aria-label="Cuenta regresiva del evento">
+        <div class="tiempo"><span id="dias">0</span><small>Días</small></div>
+        <div class="tiempo"><span id="horas">0</span><small>Horas</small></div>
+        <div class="tiempo"><span id="minutos">0</span><small>Min</small></div>
+        <div class="tiempo"><span id="segundos">0</span><small>Seg</small></div>
+      </div>
+      <p class="subtexto">
+        Sábado 05 de septiembre de 2026<br>
+        <strong>Misa · 18:00 hrs</strong><br>
+        Iglesia Nuestra Señora de la Candelaria<br><br>
+        <strong>Recepción · 20:00 hrs</strong><br>
+        Salón Lexus · Calle Hugo Ballivián s/n
+      </p>
+
+      <div class="botones">
+        <a class="boton boton-principal" href="https://wa.me/?text=Confirmo%20mi%20asistencia%20a%20las%20Bodas%20de%20Oro%20de%20Benedicta%20y%20Andr%C3%A9s" target="_blank" rel="noopener">
+          Confirmar asistencia por WhatsApp
+        </a>
+
+        <button class="boton" type="button" onclick="controlarMusica(event)" id="botonMusica">
+          ♪ Reproducir música
+        </button>
+
+      </div>
+
+      <audio id="musica" loop preload="auto" controls>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir el audio.
+      </audio>
+    </section>
+  </main>
+
+  <script>
+
+    function mostrarInvitadoDesdeLink() {
+      const parametros = new URLSearchParams(window.location.search);
+      const invitado = parametros.get('invitado');
+
+      if (invitado && invitado.trim() !== '') {
+        const nombreLimpio = invitado.trim();
+        document.getElementById('nombreInvitado').textContent = nombreLimpio;
+        document.getElementById('bloqueInvitado').style.display = 'block';
+      }
+    }
+
+    mostrarInvitadoDesdeLink();
+
+    function activarAnimacionesDeImagenes() {
+      const tarjetaPrincipal = document.querySelector('.tarjeta-interna');
+
+      requestAnimationFrame(() => {
+        tarjetaPrincipal.classList.add('is-visible');
+      });
+
+      const elementos = document.querySelectorAll('.timeline-item');
+
+      if (!('IntersectionObserver' in window)) {
+        elementos.forEach((elemento) => elemento.classList.add('is-visible'));
+        return;
+      }
+
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add('is-visible');
+            observador.unobserve(entrada.target);
+          }
+        });
+      }, {
+        threshold: 0.16,
+        rootMargin: '0px 0px -35px 0px'
+      });
+
+      elementos.forEach((elemento) => observador.observe(elemento));
+    }
+
+    activarAnimacionesDeImagenes();
+
+    const fechaEvento = new Date('2026-09-05T18:00:00-03:00').getTime();
+
+    function actualizarCuentaRegresiva() {
+      const ahora = new Date().getTime();
+      const diferencia = fechaEvento - ahora;
+
+      if (diferencia <= 0) {
+        document.getElementById('dias').textContent = '0';
+        document.getElementById('horas').textContent = '0';
+        document.getElementById('minutos').textContent = '0';
+        document.getElementById('segundos').textContent = '0';
+        return;
+      }
+
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferencia / 1000) % 60);
+
+      document.getElementById('dias').textContent = dias;
+      document.getElementById('horas').textContent = horas;
+      document.getElementById('minutos').textContent = minutos;
+      document.getElementById('segundos').textContent = segundos;
+    }
+
+    actualizarCuentaRegresiva();
+    setInterval(actualizarCuentaRegresiva, 1000);
+
+    const musica = document.getElementById('musica');
+    const botonMusica = document.getElementById('botonMusica');
+    let musicaActiva = false;
+    let intentoInicialHecho = false;
+
+    function actualizarEstadoMusica(activa) {
+      musicaActiva = activa;
+      botonMusica.textContent = activa ? '❚❚ Pausar música' : '♪ Reproducir música';
+    }
+
+    function reproducirMusica() {
+      return musica.play()
+        .then(() => {
+          actualizarEstadoMusica(true);
+          quitarInicioPorToque();
+        })
+        .catch(() => {
+          activarInicioPorToque();
+        });
+    }
+
+    function controlarMusica(event) {
+      if (event) event.stopPropagation();
+
+      if (musicaActiva) {
+        musica.pause();
+        actualizarEstadoMusica(false);
+      } else {
+        reproducirMusica();
+      }
+    }
+
+    function iniciarMusicaPorToque() {
+      reproducirMusica();
+    }
+
+    function activarInicioPorToque() {
+      document.addEventListener('click', iniciarMusicaPorToque, { once: true });
+      document.addEventListener('touchstart', iniciarMusicaPorToque, { once: true });
+    }
+
+    function quitarInicioPorToque() {
+      document.removeEventListener('click', iniciarMusicaPorToque);
+      document.removeEventListener('touchstart', iniciarMusicaPorToque);
+    }
+
+    window.addEventListener('load', () => {
+      if (intentoInicialHecho) return;
+      intentoInicialHecho = true;
+      musica.volume = 0.85;
+      reproducirMusica();
+    });
+
+    musica.addEventListener('pause', () => {
+      if (!musica.ended) actualizarEstadoMusica(false);
+    });
+
+    musica.addEventListener('play', () => {
+      actualizarEstadoMusica(true);
+    });
+  </script>
+</body>
+</html>
